@@ -5,7 +5,6 @@ import xlsxwriter as xw
 from PIL import Image, ImageTk, ImageDraw
 import cv2
 import numpy as np
-import converter
 from rembg import remove
 import pickle
 from ultralytics import YOLO
