@@ -36,7 +36,6 @@ window.title("KLASIFIKASI KUALITAS TELUR BURUNG PUYUH")
 window.bind('<Escape>', lambda e: window.quit())
 
 # 🔍 Logika Pengukuran Jarak
-
 KNOWN_DISTANCE = 100  # cm
 KNOWN_WIDTH = 3       # cm (lebar telur nyata)
 BOX_PIXEL_WIDTH_AT_KNOWN_DISTANCE = 50  # hasil kalibrasi manual saat jarak 1m
@@ -189,7 +188,7 @@ def ekstrak_ciri():
         x += 80
     output_label.config(text=prediction)
 
-def TrainingData():
+def extract_features_from_selected_image():
     global feature_df
     if 'selected_image_path' not in globals():
         messagebox.showerror("Error", "Silakan pilih gambar terlebih dahulu.")
@@ -298,7 +297,7 @@ label_ekstrak.place(x=355, y=95)
 
 # Buttons
 tk.Button(window, text="Buka gambar", command=openImage, height=1, width=15).place(x=115, y=430)
-tk.Button(window, text="Training data", command=TrainingData, height=1, width=15).place(x=115, y=470)
+tk.Button(window, text="Ekstrak Fitur", command=extract_features_from_selected_image, height=1, width=15).place(x=115, y=470)
 tk.Button(window, text="Ekstrak", command=ekstrak_ciri, height=1, width=15).place(x=465, y=430)
 tk.Button(window, text="Realtime", command=webcam_capture, height=1, width=15).place(x=465, y=510)
 
