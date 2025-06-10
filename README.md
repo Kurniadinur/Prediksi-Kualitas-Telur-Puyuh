@@ -77,13 +77,3 @@ Untuk menjalankan aplikasi ini, Anda perlu menginstal dependensi Python berikut:
     * Klik tombol **"Realtime"** untuk memulai feed webcam.
     * Aplikasi akan secara otomatis mendeteksi telur, menampilkan kotak pembatas, memperkirakan jarak, dan menampilkan klasifikasi kualitas secara real-time.
     * Tekan tombol `q` atau tutup jendela webcam secara manual untuk menghentikan feed realtime.
-
-## Kontribusi
-
-Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
-
-1.  *Fork* repositori ini.
-2.  Buat *branch* baru: `git checkout -b feature/nama-fitur-baru`
-3.  Lakukan perubahan Anda dan *commit*: `git commit -m 'Tambahkan fitur baru'`
-4.  *Push* ke *branch* Anda: `git push origin feature/nama-fitur-baru`
-5.  Buat *Pull Request* baru.
