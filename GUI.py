@@ -81,7 +81,7 @@ def webcam_capture():
                 if not cap.isOpened():
                     print("❌ Tidak ada kamera tersedia.")
                     return
-        detect = YOLO('modelyolo/best.pt')
+        detect = YOLO('model/best.pt')
 
         while True:
             ret, frame = cap.read()
