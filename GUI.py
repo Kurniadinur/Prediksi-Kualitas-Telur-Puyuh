@@ -36,6 +36,7 @@ window.title("KLASIFIKASI KUALITAS TELUR BURUNG PUYUH")
 window.bind('<Escape>', lambda e: window.quit())
 
 # 🔍 Logika Pengukuran Jarak
+
 KNOWN_DISTANCE = 100  # cm
 KNOWN_WIDTH = 3       # cm (lebar telur nyata)
 BOX_PIXEL_WIDTH_AT_KNOWN_DISTANCE = 50  # hasil kalibrasi manual saat jarak 1m
@@ -80,7 +81,7 @@ def webcam_capture():
                 if not cap.isOpened():
                     print("❌ Tidak ada kamera tersedia.")
                     return
-        detect = YOLO('model/best.pt')
+        detect = YOLO('modelyolo/best.pt')
 
         while True:
             ret, frame = cap.read()
