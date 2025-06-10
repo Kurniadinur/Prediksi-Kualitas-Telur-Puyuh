@@ -21,7 +21,6 @@ Untuk menjalankan aplikasi ini, Anda perlu menginstal dependensi Python berikut:
 1.  **Kloning repositori ini (jika sudah ada di GitHub):**
     ```bash
     git clone https://github.com/Kurniadinur/Prediksi-Kualitas-Telur-Puyuh.git
-    cd YourRepoName
     ```
 2.  **Buat Virtual Environment (Sangat Direkomendasikan):**
     ```bash
